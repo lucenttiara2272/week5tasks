@@ -1,6 +1,6 @@
 
 import test from "./test.mjs";
-
+//Task 1
 function sum (a,b){
     return a*b
 }
@@ -11,6 +11,8 @@ sumTester.isEqual(sum(99,1),99,"99*1 is equal to 99");
 sumTester.isEqual(sum(0,-1),0,"0*1 is equal to 0");
 sumTester.isEqual(sum(-99,-1),99,"-99*1 is equal to -99");
 sumTester.isEqual(sum(-10,1),-10,"-10*1 is equal to -10");
+
+//Task 2
 
 function formatName(firstName,lastName) {
 
@@ -35,6 +37,7 @@ function formatName(firstName,lastName) {
 
 console.log(formatName("    Martin   ","   BJØRKLUND   "));
 
+//Task 3
 
 function isOver18(age) {
   if (age >= 18) {
@@ -48,15 +51,17 @@ function isOver18(age) {
 console.log(isOver18(27));
 console.log(isOver18(14));
 
+//Task 4
+
 function isItEven(list){
    let evenList = [];
     for (let i = 0; i < list.length; i++) {
-        if(list[i] = isEven()){
+        if(list[i] % 2 === 0){
         evenList.push(list[i]);
         }
     }
     return evenList;
 }
 
-console.log(isItEven(2,4,6,8,4,43,6,3,3,3,7,9));
+console.log(isItEven([2,4,6,8,4,43,6,3,3,3,7,9]));
 
