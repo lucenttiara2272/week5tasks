@@ -34,3 +34,29 @@ function formatName(firstName,lastName) {
 }
 
 console.log(formatName("    Martin   ","   BJØRKLUND   "));
+
+
+function isOver18(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return false
+  }
+  
+} 
+
+console.log(isOver18(27));
+console.log(isOver18(14));
+
+function isItEven(list){
+   let evenList = [];
+    for (let i = 0; i < list.length; i++) {
+        if(list[i] = isEven()){
+        evenList.push(list[i]);
+        }
+    }
+    return evenList;
+}
+
+console.log(isItEven(2,4,6,8,4,43,6,3,3,3,7,9));
+
