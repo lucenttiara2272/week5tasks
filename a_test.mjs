@@ -65,3 +65,19 @@ function isItEven(list){
 
 console.log(isItEven([2,4,6,8,4,43,6,3,3,3,7,9]));
 
+
+//Task 5
+
+function divide(x,y) {
+    return x/y
+}
+
+const divideTester = test("testing divide function");
+
+divideTester.isEqual(divide(99,1),99,"99/1 is equal to 99");
+divideTester.isEqual(divide(0,1),0,"0/1 is equal to 0");
+divideTester.isEqual(divide(-99,-1),99,"-99/-1 is equal to +99?");
+divideTester.isEqual(divide(-10,1),-10,"-10/1 is equal to -10");
+divideTester.isEqual(divide(1,0),Infinity,"0/1 is equal to infinity");
+
+
